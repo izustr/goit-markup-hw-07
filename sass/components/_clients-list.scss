@@ -1,9 +1,9 @@
-.clients-list {
+.client__list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.clients-title {
+.client__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -11,29 +11,30 @@
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
-.client-link {
+.client__item {
+	margin-right: 30px;
+	&:last-child {
+		margin-right: 0;
+	}
+}
+.client__link {
 	width: 170px;
 	height: 92px;
-	border: 1px solid currentColor;
 	color: var(--icon-fill-color);
+	border: 1px solid currentColor;
 	fill: currentColor;
 	border-radius: 4px;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition-property: border, fill;
+	transition-property: border-color, fill;
 	transition-duration: 250ms;
 	transition-timing-function: var(--cubic-bezier);
-}
-.client-item {
-	margin-right: 30px;
-}
-.client-item:last-child {
-	margin-right: 0;
-}
-.client-link:hover,
-.client-link:focus {
-	border-color: var(--accent-color);
-	fill: var(--accent-color);
+
+	&:hover,
+	&:focus {
+		border-color: var(--accent-color);
+		fill: var(--accent-color);
+	}
 }
