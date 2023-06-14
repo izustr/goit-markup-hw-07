@@ -17,17 +17,18 @@
 	width: 528px;
 	min-height: 581px;
 	background-color: var(--accessary-color);
-}
-.close-btn {
-	position: absolute;
-	top: 8px;
-	right: 8px;
-	width: 30px;
-	height: 30px;
-	background-color: var(--accessary-color);
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 50%;
-	cursor: pointer;
+
+	&__close-btn {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		width: 30px;
+		height: 30px;
+		background-color: var(--accessary-color);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
+		cursor: pointer;
+	}
 }
 .is-hidden {
 	opacity: 0;

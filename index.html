@@ -354,20 +354,21 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container footer-flex">
-            <div class="footer-div">
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__adress-container">
                 <a class="logo link" href="./index.html">Web<span class="logo--footer-color">Studio</span></a>
 
-                <address class="footer-adress-list">
-                    <ul class="footer-contacts list">
-                        <li class="footer-item"><a class="footer-adress link"
+                <address class="footer__adress-list">
+                    <ul class="list">
+                        <li class="footer__item"><a class="footer__link link"
                                 href="https://goo.gl/maps/d49CJBmiLWtHoX3f7" target="_blank"
                                 rel="noreferrer noopener nofollow">
                                 Warszawa, Aleje Jerozolimskie 21 </a></li>
-                        <li class="footer-item"><a class="footer-contact link"
+                        <li class="footer__item"><a class="footer__link footer__link--color link"
                                 href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer-item"><a class="footer-contact link" href="tel:+48111111111">+48 111 111
+                        <li class="footer__item"><a class="footer__link footer__link--color link"
+                                href="tel:+48111111111">+48 111 111
                                 111</a>
                         </li>
                     </ul>
@@ -375,7 +376,7 @@
             </div>
             <div class="footer__social-div">
                 <p class="footer__social-title">DOŁĄCZ DO NAS</p>
-                <ul class="social__list social__list--footer list">
+                <ul class="social__list list">
                     <li class="social__item">
                         <a class="social__link social__link--footer" href="#">
                             <svg width="20" height="20">
@@ -410,13 +411,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-newsletter-div">
-                <p class="footer-newsletter-title">Zapisz się do newslettera</p>
-                <div class="input-btn-div">
-                    <label class="footer-label-email">
-                        <input class="footer-input" type="email" name="footer-email" placeholder="E-mail" required>
+            <div>
+                <p class="footer__newsletter-title">Zapisz się do newslettera</p>
+                <div class="footer__input-div">
+                    <label class="footer__label">
+                        <input class="footer__input" type="email" name="footer-email" placeholder="E-mail" required>
                     </label>
-                    <button class="footer-btn" type="submit">Zapisz się<svg class="btn-icon-send" width="24"
+                    <button class="footer__btn" type="submit">Zapisz się<svg class="footer__icon" width="24"
                             height="24">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
@@ -428,14 +429,14 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn" data-modal-close="">
-                <svg class="modal-icon" width="11" height="11">
+            <button type="button" class="modal__close-btn" data-modal-close="">
+                <svg class="modal__icon" width="11" height="11">
                     <use href="./images/icons-vector.svg#icon-vector">
                     </use>
                 </svg>
             </button>
-            <form class="form-layout">
-                <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
+            <form class="form__layout">
+                <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
                 <label class="label-title">
                     Imie
                     <span class="input-wrap">

@@ -6,10 +6,12 @@
 }
 .features__item {
 	margin-right: var(--item-margin);
+
+	&:last-child {
+		margin-right: 0;
+	}
 }
-.features__item:last-child {
-	margin-right: 0;
-}
+
 .features__title {
 	font-weight: 700;
 	font-size: 14px;

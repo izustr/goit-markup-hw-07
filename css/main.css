@@ -141,7 +141,6 @@ button {
   margin-right: 46px;
   display: inline;
 }
-
 .page-header__nav-item:last-child {
   margin-right: 0;
 }
@@ -155,7 +154,6 @@ button {
 .page-header__contact-item {
   margin-right: var(--item-margin);
 }
-
 .page-header__contact-item:last-child {
   margin-right: 0;
 }
@@ -169,6 +167,12 @@ button {
   -webkit-transition: color 250ms var(--cubic-bezier);
   transition: color 250ms var(--cubic-bezier);
   position: relative;
+}
+.page-header__nav-link:hover, .page-header__nav-link:focus {
+  color: var(--accent-color);
+}
+.page-header__nav-link.page-header__nav-link--current-link {
+  color: var(--accent-color);
 }
 
 .page-header__contact-link {
@@ -186,24 +190,13 @@ button {
   -webkit-transition: color 250ms var(--cubic-bezier);
   transition: color 250ms var(--cubic-bezier);
 }
-
-.page-header__nav-link:hover,
-.page-header__nav-link:focus {
-  color: var(--accent-color);
-}
-
-.page-header__nav-link.page-header__nav-link--current-link {
+.page-header__contact-link:hover, .page-header__contact-link:focus {
   color: var(--accent-color);
 }
 
 .page-header__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-
-.page-header__contact-link:hover,
-.page-header__contact-link:focus {
-  color: var(--accent-color);
 }
 
 .page-header__nav-link--current-link::after {
@@ -288,7 +281,6 @@ button {
 .features__item {
   margin-right: var(--item-margin);
 }
-
 .features__item:last-child {
   margin-right: 0;
 }
@@ -691,38 +683,13 @@ button {
   padding: 49px 45px 49px 24px;
 }
 
-footer {
+.footer {
   background-color: var(--accent-background);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-adress-list {
-  margin-top: 20px;
-}
-
-.footer-adress,
-.footer-contact {
-  color: var(--accessary-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.72;
-  letter-spacing: 0.03em;
-}
-
-.footer-item {
-  margin-top: 9px;
-}
-
-.footer-item:first-child {
-  margin-top: 0px;
-}
-
-.footer-contact {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-flex {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,8 +701,30 @@ footer {
           justify-content: space-between;
 }
 
-.footer-div {
+.footer__adress-container {
   margin-right: 70px;
+}
+
+.footer__adress-list {
+  margin-top: 20px;
+}
+
+.footer__link {
+  color: var(--accessary-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+}
+.footer__link--color {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__item {
+  margin-top: 9px;
+}
+.footer__item:first-child {
+  margin-top: 0px;
 }
 
 .footer__social-div {
@@ -752,7 +741,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-newsletter-title {
+.footer__newsletter-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -762,13 +751,25 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer-label-email {
+.footer__input-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__label {
   width: 358px;
   height: 50px;
   margin-right: 12px;
 }
 
-.footer-input {
+.footer__input {
   width: 100%;
   height: 100%;
   padding: 15px 16px;
@@ -783,7 +784,7 @@ footer {
   border-radius: 4px;
 }
 
-.footer-btn {
+.footer__btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -793,19 +794,7 @@ footer {
   padding: 10px 28px 10px 42px;
 }
 
-.input-btn-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.btn-icon-send {
+.footer__icon {
   margin-left: 24px;
   vertical-align: middle;
 }
@@ -835,8 +824,7 @@ footer {
   min-height: 581px;
   background-color: var(--accessary-color);
 }
-
-.close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -854,20 +842,15 @@ footer {
   pointer-events: none;
 }
 
-.form-layout {
+.form__layout {
   padding: 40px;
 }
 
-/* label {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10px;
-} */
 label:nth-last-child(3) {
   margin-bottom: 20px;
 }
 
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;

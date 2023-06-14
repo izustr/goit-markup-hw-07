@@ -19,18 +19,18 @@
 .page-header__nav-item {
 	margin-right: 46px;
 	display: inline;
-}
-.page-header__nav-item:last-child {
-	margin-right: 0;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 .page-header__contacts-list {
 	display: flex;
 }
 .page-header__contact-item {
 	margin-right: var(--item-margin);
-}
-.page-header__contact-item:last-child {
-	margin-right: 0;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 .page-header__nav-link {
 	font-weight: 500;
@@ -40,6 +40,14 @@
 	color: var(--text-color);
 	transition: color 250ms var(--cubic-bezier);
 	position: relative;
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+	&.page-header__nav-link--current-link {
+		color: var(--accent-color);
+	}
 }
 .page-header__contact-link {
 	font-weight: 500;
@@ -50,22 +58,18 @@
 	display: flex;
 	align-items: center;
 	transition: color 250ms var(--cubic-bezier);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
-.page-header__nav-link:hover,
-.page-header__nav-link:focus {
-	color: var(--accent-color);
-}
-.page-header__nav-link.page-header__nav-link--current-link {
-	color: var(--accent-color);
-}
+
 .page-header__icon {
 	fill: currentColor;
 	margin-right: 10px;
 }
-.page-header__contact-link:hover,
-.page-header__contact-link:focus {
-	color: var(--accent-color);
-}
+
 .page-header__nav-link--current-link::after {
 	color: var(--accent-color);
 	position: absolute;
