@@ -1,15 +1,10 @@
 .portfolio-img-title {
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
+	@include font(700, 18px, 2, 0.06em);
 	color: var(--text-color);
 	margin-bottom: 4px;
 }
 .portfolio-img-text {
-	font-size: 16px;
-	line-height: 1.88;
-	letter-spacing: 0.03em;
+	@include font-normal(16px, 1.88, 0.03em);
 	color: var(--secondary-text-color);
 }
 .portfolio-img-containers {
@@ -62,9 +57,7 @@
 }
 
 .overlay p {
-	font-size: 18px;
-	line-height: 1.55;
-	letter-spacing: 0.03em;
+	@include font-normal(18px, 1.55, 0.03em);
 	color: var(--accessary-color);
 	padding: 49px 45px 49px 24px;
 }

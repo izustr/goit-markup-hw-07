@@ -6,17 +6,12 @@ label:nth-last-child(3) {
 	margin-bottom: 20px;
 }
 .form__title {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.15;
+	@include font(700, 20px, 1.15, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	margin-bottom: 12px;
 }
 .label-title {
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.01em;
+	@include font-normal(12px, 1.17, 0.01em);
 	color: var(--secondary-text-color);
 	display: flex;
 	flex-direction: column;
@@ -68,9 +63,7 @@ label:nth-last-child(3) {
 	resize: none;
 }
 .comment::placeholder {
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.01em;
+	@include font-normal(12px, 1.17, 0.01em);
 	color: rgba(117, 117, 117, 0.5);
 }
 .checkbox-form {
@@ -112,8 +105,8 @@ label:nth-last-child(3) {
 	margin-left: 8px;
 }
 .regulations-link {
-	color: var(---accent-color);
 	text-decoration: underline;
+	color: var(--accent-color);
 }
 
 .checkbox-input:checked + .checkbox-icon {
@@ -127,10 +120,7 @@ label:nth-last-child(3) {
 }
 
 .form-btn {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.88;
-	letter-spacing: 0.06em;
+	@include font(700, 16px, 1.88, 0.06em);
 	color: var(--accessary-color);
 	background-color: var(--accent-color);
 	margin: 0 auto;

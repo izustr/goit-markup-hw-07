@@ -2,17 +2,12 @@
 	background-color: var(--secondary-background);
 }
 .team__list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex;
 	flex-wrap: wrap;
 }
 .team__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+	@include font(700, 36px, 1.17, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
 .team__item {
@@ -27,15 +22,10 @@
 	}
 }
 .team__name {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
+	@include font(500, 16px, 1.19, 0.03em);
 }
 .team__text {
-	font-size: 16px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
+	@include font-normal(16px, 1.19, 0.03em);
 	color: var(--secondary-text-color);
 	margin-top: 10px;
 	margin-bottom: 16px;

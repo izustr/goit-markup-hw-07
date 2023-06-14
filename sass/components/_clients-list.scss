@@ -1,14 +1,9 @@
 .client__list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex;
 }
 .client__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+	@include font(700, 36px, 1.17, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
 .client__item {

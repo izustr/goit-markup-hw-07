@@ -1,9 +1,6 @@
 .about__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
+	@include font(700, 36px, 1.17, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
 .about__list {
@@ -18,10 +15,7 @@
 	}
 }
 .about__label {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
 	color: var(--accessary-color);
 	position: absolute;

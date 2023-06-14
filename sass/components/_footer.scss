@@ -17,9 +17,7 @@
 .footer__link {
 	color: var(--accessary-color);
 	font-style: normal;
-	font-size: 14px;
-	line-height: 1.72;
-	letter-spacing: 0.03em;
+	@include font-normal(14px, 1.72, 0.03em);
 
 	&--color {
 		color: rgba(255, 255, 255, 0.6);
@@ -28,8 +26,8 @@
 .footer__item {
 	margin-top: 9px;
 	&:first-child {
-	margin-top: 0px;
-}
+		margin-top: 0px;
+	}
 }
 
 // SOCIAL-LINK
@@ -38,10 +36,7 @@
 	margin-right: 78px;
 }
 .footer__social-title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
 	color: var(--accessary-color);
 	margin-bottom: 20px;
@@ -50,10 +45,7 @@
 // NEWSLETTER
 
 .footer__newsletter-title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(700, 14px, 1.14, 0.03em);
 	text-transform: uppercase;
 	color: var(--accessary-color);
 	margin-bottom: 20px;
@@ -82,10 +74,7 @@
 	border-radius: 4px;
 }
 .footer__btn {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.88;
-	letter-spacing: 0.06em;
+	@include font(700, 16px, 1.88, 0.06em);
 	color: var(--accessary-color);
 	background-color: var(--accent-color);
 	padding: 10px 28px 10px 42px;
