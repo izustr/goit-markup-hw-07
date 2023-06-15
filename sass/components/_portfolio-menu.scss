@@ -1,15 +1,15 @@
-.button-nav {
+.portfolio-menu {
 	@include flex;
 	flex-wrap: wrap;
 	margin-bottom: 50px;
 }
-.button-item {
+.portfolio-menu__item {
 	margin-right: 8px;
+	&:last-child {
+		margin-right: 0;
+	}
 }
-.button-item:last-child {
-	margin-right: 0;
-}
-.portfolio-btn {
+.portfolio-menu__btn {
 	font-family: inherit;
 	@include font(500, 16px, 1.63, 0.03em);
 	text-align: center;
@@ -20,11 +20,12 @@
 	transition-property: color, background-color, box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: var(--cubic-bezier);
-}
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-	color: var(--accessary-color);
-	background-color: var(--accent-color);
-	box-shadow: var(--box-shadow-filter);
-	border-radius: 4px;
+
+	&:hover,
+	&:focus {
+		color: var(--accessary-color);
+		background-color: var(--accent-color);
+		box-shadow: var(--box-shadow-filter);
+		border-radius: 4px;
+	}
 }
