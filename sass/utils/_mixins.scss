@@ -14,3 +14,8 @@
 	line-height: $lh;
 	letter-spacing: $ls;
 }
+@mixin transition($tp1, $tp2, $td, $ttf) {
+	transition-property: $tp1, $tp2;
+	transition-duration: $td;
+	transition-timing-function: $ttf;
+}

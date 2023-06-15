@@ -89,9 +89,7 @@ label:nth-last-child(3) {
 	border: 2px solid var(--text-color);
 	border-radius: 2px;
 	vertical-align: sub;
-	transition-property: background-color, border-color;
-	transition-duration: 250ms;
-	transition-timing-function: var(--cubic-bezier);
+	@include transition(background-color, border-color, 250ms, var(--cubic-bezier));
 }
 
 .checkbox-vector {
